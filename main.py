@@ -3,7 +3,6 @@ import time, random
 
 
 
-
 # def check(ans):
 def check(out):
   print(out)
@@ -27,6 +26,7 @@ def ancient():
   father = True
   brother = False
   sister = False
+  fatherhappy = True
   print("Pass2")
   print("Who are your parents?")
   ans = int(check('1. Bob and Bobby 2. Egyptian slaves 3.Egyptian royalty '))
@@ -46,10 +46,13 @@ def ancient():
     time.sleep(2)
     print("You are a little baby")
     time.sleep(2)
-    chance = int(random.randint(1, 5))
-    if chance == 2 or 3:
+    chance = random.randint(1, 3)
+    if chance == 3 or chance == 2:
       print("Your mother died in childbirth")
       mother = False
+    else:
+      print("Your mother lives!")
+      mother = True
     if not mother:
       chance = random.randint(1, 3)
       if chance == 1:
@@ -90,7 +93,7 @@ def ancient():
         time.sleep(2)
         print("As you're not old enough, your father's friend becomes regent until you're 20")
         regent = True
-    #this line!!
+    print("You're 10 and you have some important life choices, such as...")
 
 
 
