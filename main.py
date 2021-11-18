@@ -46,7 +46,7 @@ def ancient():
     time.sleep(2)
     print("You are a little baby")
     time.sleep(2)
-    chance = random.randint(1, 3)
+    chance = random.randint(1, 5)
     if chance == 3 or chance == 2:
       print("Your mother died in childbirth")
       mother = False
@@ -75,9 +75,9 @@ def ancient():
       elif ans == 1:
         print("Your father remarries!")
         stepmother = True
-        ans = random.randint(1, 2)
+        an = random.randint(1, 2)
         print("Your stepmother is...")
-        if ans == 1:
+        if an == 1:
           print("A horrible person")
           horridM = True
         else:
@@ -94,6 +94,15 @@ def ancient():
         print("As you're not old enough, your father's friend becomes regent until you're 20")
         regent = True
     print("You're 10 and you have some important life choices, such as...")
+    if father and mother:
+      print("Do you want to be a well behaved child?")
+      ans = check("1. Yes 2. No")
+      if ans == 1:
+        good = True
+      elif ans == 2:
+        good = False
+      else:
+        exit("I HATE YOU - Darth Vader 15BBY")
 
 
 
