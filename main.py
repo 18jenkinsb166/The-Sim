@@ -1,6 +1,6 @@
 import time, random
 
-#0.1.4
+#0.1.5
 
 
 # def check(ans):
@@ -210,7 +210,7 @@ def birth():
 def opening():
   print("Welcome to...")
   time.sleep(1)
-  print("The Sim v0.1.4 ALPHA")
+  print("The Sim v0.1.5 ALPHA")
   time.sleep(1)
   ans = int(check("1. Changelog 2. Game"))
   if ans == 1:
