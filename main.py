@@ -1,6 +1,6 @@
 import time, random
 
-
+#0.1.4
 
 
 # def check(ans):
@@ -26,7 +26,7 @@ def ancient():
   father = True
   brother = False
   sister = False
-  fatherhappy = True
+  fatherhappy = True#family stuff
   print("Pass2")
   print("Who are your parents?")
   ans = int(check('1. Bob and Bobby 2. Egyptian slaves 3.Egyptian royalty '))
@@ -103,7 +103,30 @@ def ancient():
         good = False
       else:
         exit("I HATE YOU - Darth Vader 15BBY")
-
+    elif not mother:
+        print("Your father's death has traumatised you, how will you now behave?")
+        print()
+        print("1. You become a drunk")
+        print("2. You become very short tempered and hate everyone around you ")
+        ans = check("3. You blame yourself for your father's death and become a quiet and withdrawn person")
+        if ans == 1:#important personality variables
+            drunk = True
+            hate = False
+            alone = False
+        elif ans == 2:
+            drunk = False
+            hate = True
+            alone = False
+        elif ans == 3:
+            drunk = False
+            hate = False
+            alone = True
+        else:
+            exit("I HATE YOU - Darth Vader 15BBY")
+  def step1():#beginning of the next stage of game
+    print()
+  step1()
+      
 
 
 def notso():
@@ -187,7 +210,7 @@ def birth():
 def opening():
   print("Welcome to...")
   time.sleep(1)
-  print("The Sim v0.1.3 ALPHA")
+  print("The Sim v0.1.4 ALPHA")
   time.sleep(1)
   ans = int(check("1. Changelog 2. Game"))
   if ans == 1:
@@ -195,6 +218,8 @@ def opening():
     print("--Various grammar fixes")
     print("--Logic error fixes")
     print("--Mechanic fixes")
+    print("--Life area groupings")
+    print("--Large development on Egyptian Level")
   else:
     birth()
 
